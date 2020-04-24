@@ -10,22 +10,21 @@ body {
 	border: 0;
 }
 #logo-img {
-	background: url('../images/restaurant-logo_large.png') no-repeat;
 	width: 150px;
 	height: 150px;
 	margin: 10px 15px 10px 0;
 }
 .navbar-brand {
-	padding-top: 25px;
+	
 }
 .navbar-brand h1 {
 	font-family: 'Lora', serif;
 	color: #557c3e;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
+	margin-top: 15px;
 	margin-bottom: 0;
 	line-height: .75;
 }
@@ -40,3 +39,22 @@ body {
 }
 .navbar-brand p span {
 	vertical-align: middle}
+#header-nav button {
+	float: right;
+}
+@media (max-width: 414px) {
+  .navbar-brand h1 {
+  	font-size: 0.9em;
+  }
+  .navbar-brand p {
+  	font-size: 0.4em;
+  }
+}
+@media (max-width: 470px) {
+  .navbar-brand h1 {
+  	font-size: 1.2em;
+  }
+  .navbar-brand p {
+  	font-size: 0.5em;
+  }
+}

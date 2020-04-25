@@ -44,7 +44,7 @@ body {
 }
 @media (max-width: 414px) {
   .navbar-brand h1 {
-  	font-size: 0.9em;
+  	font-size: 0.8em;
   }
   .navbar-brand p {
   	font-size: 0.4em;

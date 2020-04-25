@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/glyphicons.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <title>David Chu's China Bistro</title>
@@ -12,7 +13,7 @@
 <body>
   <header>
     <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
-    	<div class="container">
+    	<div class="container align-items-start">
         	<div>
         		<a class="float-left" href="index.html">
        				<img id="logo-img" class="d-none d-lg-block" src="images/restaurant-logo_large.png">  
@@ -27,9 +28,30 @@
         			</p>	
 				</div>
 			</div>
-        	<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+        	<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       				<span class="navbar-toggler-icon"></span>
       		</button>
+      		<div class="collapse navbar-collapse" id="collapsable-nav">
+      			<div class="navbar-nav ml-auto">
+      				<a href="menu-categories.html" class="p-2">
+      					<span class="glyphicon glyphicon-cutlery"></span>
+      					<br class="d-none d-sm-block">Menu	
+      				</a>
+      				<a href="#" class="p-2">
+      					<span class="glyphicon glyphicon-info-sign"></span>
+      					<br class="d-none d-sm-block">About	
+      				</a>
+      				<a href="#" class="p-2">
+      					<span class="glyphicon glyphicon-certificate"></span>
+      					<br class="d-none d-sm-block">Awards	
+      				</a>
+      				<a id="phone" class="d-none d-sm-block p-2" href="tel:410-602-5008">
+      					<span>410-602-5008</span>
+      					<div>* We deliver</div>	
+      				</a>
+      			</div>      			
+      		</div>
         </div>
     	</nav>
   </header>

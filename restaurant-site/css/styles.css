@@ -52,7 +52,7 @@ body {
 }
 @media (max-width: 470px) {
   .navbar-brand h1 {
-  	font-size: 1.2em;
+  	font-size: 1.1em;
   }
   .navbar-brand p {
   	font-size: 0.5em;

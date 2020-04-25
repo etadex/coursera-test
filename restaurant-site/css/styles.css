@@ -58,3 +58,6 @@ body {
   	font-size: 0.5em;
   }
 }
+nav button {
+	margin-top: 20px;
+}

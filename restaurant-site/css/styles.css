@@ -42,22 +42,6 @@ body {
 #header-nav button {
 	float: right;
 }
-@media (max-width: 414px) {
-  .navbar-brand h1 {
-  	font-size: 0.7em;
-  }
-  .navbar-brand p {
-  	font-size: 0.4em;
-  }
-}
-@media (max-width: 470px) {
-  .navbar-brand h1 {
-  	font-size: 1.0em;
-  }
-  .navbar-brand p {
-  	font-size: 0.5em;
-  }
-}
 nav button {
 	margin-top: 20px;
 }
@@ -142,10 +126,72 @@ nav button {
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
 	box-shadow: 0 0 5px 1px #cccccc;
 }
+#menu-tile {
+	background: url('../images/menu-tile.jpg') no-repeat;
+	background-position: center;
+}
+#specials-tile {
+	background: url('../images/specials-tile.jpg') no-repeat;
+	background-position: center;
+}
 #home-tiles a:link, #home-tiles a:hover, #home-tiles a:visited {
 	text-decoration: none;
 } 
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
 /* END HOME PAGE */
+@media (max-width: 320px) {
+	#menu-tile, #specials-tile, #map-tile {
+  		width: 268px;
+  		margin: 0 auto 15px;
+	}
+	.navbar-brand h1 {
+		font-size: 53%;
+	}
+	.navbar-brand p {
+		font-size: 35%;
+	}
+}
+@media (min-width: 320px) {
+	.navbar-brand h1 {
+		font-size: 0.666em;
+	}
+	.navbar-brand p {
+		font-size: 0.3em;
+	}
+}
+@media (min-width: 404px) {
+	#menu-tile, #specials-tile, #map-tile {
+  		width: 360px;
+  		margin: 0 auto 15px;
+	}
+}
+@media (min-width: 576px) {
+	#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 1px solid #3f0c1f;
+	overflow: hidden;
+	}
+	.navbar-brand h1 {
+		font-size: 1em;
+	}
+	.navbar-brand p {
+		font-size: 0.7em;
+	}
+}
 @media (max-width: 768px) {
 	#main-content {
 		width: 100%;
@@ -160,6 +206,14 @@ nav button {
 		background: url('../images/jumbotron_768.jpg') no-repeat;
 		height: 432px;
 	}
+	#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 1px solid #3f0c1f;
+	overflow: hidden;
+}
 }
 @media (min-width: 992px) {
 	.container .jumbotron {
@@ -171,8 +225,14 @@ nav button {
 		background: url('../images/jumbotron_1200.jpg') no-repeat;
 		height: 675px;
 	}
+	.navbar-brand h1 {
+		font-size: 1.3em;
+	}
+	.navbar-brand p {
+		font-size: 0.7em;
+	}
 }
 .img-fluid {
 	max-height: 100%;
+	}
 }
-
